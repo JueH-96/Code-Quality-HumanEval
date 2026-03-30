@@ -1,0 +1,6 @@
+def check_if_last_char_is_a_letter(txt):
+    if not txt or not txt[-1].isalpha():
+        return False
+    words = txt.split()
+    last_word = words[-1]
+    return len(last_word) == 1 and last_word.isalpha()
