@@ -1,0 +1,2 @@
+def odd_count(lst):  # original function definition here... not needed. it's just a placeholder until you fill up this part with your code (which is much more meaningful in real problem). The following lines of the solution assume that `odd_count` already exists as defined by its docstring above:
+    return [f"the number of odd elements {i}n the str{i+1}ng {i.replace('0','') if int(num)%2 else i}{'d'} of input." for num, i in enumerate(lst)]  # this part is complete with your solution

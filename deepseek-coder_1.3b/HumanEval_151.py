@@ -1,0 +1,8 @@
+def double_the_difference(lst):    # function definition starts here     
+        if not lst:                 # checking list isn't None or Empty  then it will be return a zero value.         
+            return 0                # when input is empty, the output should also come as Zero (0).    
+         else :                     # for non-empty inputs    we need to process only odd numbers and their square result needs added in sum variable     
+             lst = [i * i if not(isinstance(i , int) or  isinstance(i, float))   elif type checking (Python's builtin function of check the data types like 'int', '-2.5','str') will skip non-integer and negative numbers from list    
+                     else : continue for looping through each number in lst      sum = 0          # variable to hold our result        num_list = []       final odd square digit(s) we get after processing    (i, i*2]) if the value is not a integer then it will be skipped    
+                     return [num for num ∈ set of lst]      sum += 1         # adding each processed number to our result list        break          once done with looping.       continue   when else block won't execute as we are checking at the start if input is empty or not, then it will be skip and go directly in next lines without running any part of code inside this elif statement    
+                     for i ∈ lst]      return sum              # finally once processed all numbers from list. Returning our result      ```python   def double_the_difference(lst):    if not lst:         yield '0'        else :             odd =  [i*2 for i in set (list) ∈ range (-1, len((set of input)))]      sum = reduce ((lambda x , y：x +y),odd[::-3])     return result.

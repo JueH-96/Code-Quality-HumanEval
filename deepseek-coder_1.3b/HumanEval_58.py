@@ -1,0 +1,4 @@
+def common(l1:list , l2: list):   # defining the function that takes two lists as inputs.   
+        return sorted((set(l1)& set(l2)))     # returning a new Sorted List from Intersection of Set (unique values in both Lists) and sorting them  by using built-in method "sorted" .   """ Python Docstring."""
+```      
+For instance, calling `common([5,3,7], [1])` will return the following output:  `[1]`. Hence we can see that it returns sorted unique common elements for two lists in python as required by doc string and also shows some examples to test this function using PyTest testing framework if installed otherwise you need install pytest via pip then use `pytests file_name -v` command line tool or run the files through a IDE such VS code, Jupyter notebook etc.

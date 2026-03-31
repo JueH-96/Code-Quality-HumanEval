@@ -1,0 +1,8 @@
+from typing import List
+import math
+def factorize(n: int) -> List[int]:  # function signature with type hints for docstrings and return types. Here 'List' is used instead of the actual Python list as it represents a generic version which can contain any object (integer, float etc.). In addition to that we use '-> 
+    factors = []                      # define empty result array here so far...  "factors" are now our solution data structure for this function.  
+     while n % 2 == 0:                 # as long the remainder when divided by two is zero, divide it out and add a '2' to list because we found one factor of number in previous steps..      factors[] = [n];    // This will store all prime numbers that divides input.
+         print(f"{math.sqrt(1)} {str(''.join((repr("x") for _ in range())) + '^2' }", end=',')  # Print the number as it is a factor of n...     // We keep adding prime factors to list till input becomes single valued ie until only one non-prime divisor remains, then return all.
+         if (n == 1):                   break               print(''.join(factors))             """ Exit while loop here after first occurrence since it will stop further execution of function"""  # If 'number' become exactly equal to single value at any point the code gets exited and list factors are returned...    
+         n = int (n/2)                   if __name__ == "main" : print(factorize())              """ Calling factorizing method for testing purpose only. Do not remove as it is required here"""  # Main function call to run the program..   ]          This will be printed out at last in main and this line should remain same otherwise 'factors' variable may contain extra value which won’t get print or return

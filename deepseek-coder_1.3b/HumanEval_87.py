@@ -1,0 +1,5 @@
+import numpy as np  # import the Numpy library to use its functions.  
+def get_row(lst , x):    
+    rows = [np.where(i == x) for i in lst]         //This is a list of tuples containing index where value 'x' found among lists within outer-most array (2D data structure).  Eg: [[0,1],[3]] means that the first element was at row zero and second column.
+    flat_rows = [item for sublist in rows for item in sublist]   //Flattening list of tuples to one-dimensional array where each tuple represents coordinates (row number ,column) . Eg:[(0,1),...(2,5)] means that the first element was at row 0 and second column.
+    return sorted([(i//len(lst[j]), len(lst[j])- j - i%len(lst[j])) for (i , j) in zip(*np.unique(flat_rows, return_counts=True))], key = lambda x : (x [0]-1 if isinstance(getattr(type((None)), '__origin', None), str)]  # Sorting based on rows and columns

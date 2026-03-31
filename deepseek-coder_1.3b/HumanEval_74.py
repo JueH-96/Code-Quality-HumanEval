@@ -1,0 +1,1 @@
+Here is the complete Python function. I have used a `for` loop to iterate over each string in both lists, and then added up their length into total_len variable which stores all strings from first list having less than others based on ascii value of characters or summed it with 0 if there are no elements for that index because the lengths might be different.

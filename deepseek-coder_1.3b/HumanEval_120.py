@@ -1,0 +1,9 @@
+import heapq
+def maximum(arr, k):   # define your input list 'arr', number of elements you want from max element set i.e.'k'.
+    if len(set([i for i in arr[0]+1])) < min(len(input), (min(length)):  this is to check whether the given range contains all integers or not, then it won't consider negative numbers and large inputs inside array by creating set. Else raise error message
+    if k> len([i for i in arr[0]+1]) : # If you want less number of elements than available , simply return an empty list as well 
+        print("Number to be selected is more")  
+      	return []    					# Returning None or any appropriate value. You might choose not returning anything and handle it at the end if necessary, but this will make no difference in terms you'll get by implementing logic on your part anyway i guess?  # If number of elements requested (k) is larger than available values inside array then return empty list
+    else:		# Else continue with function implementation. I can write it out to understand better if needed for later sections also remember this will be the main body in case no error occurs while running your code, hence might change according actual logic requirements  # If number of elements requested (k) is less than available values inside array then pop and return max k numbers
+        heapq.heapify(arr[0])			# Convert list to a valid min-Heap in arr using the first element as root node, time complexity O(n). The original order will be lost if sorting algorithm like quick or merge is used on it  # This line may change according your actual code implementation
+        return [heapq.heappop(arr[0]) for _ in range (k)]	# Return k elements with max value using heap and list comprehension, time complexity O(n log n). If not a valid min-Heap then throws error  # This line may change according actual code implementation

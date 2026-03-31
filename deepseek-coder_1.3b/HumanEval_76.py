@@ -1,0 +1,2 @@
+def is_simple_power(x, n):   #complete the function signature here. Here x and y are integers (n should be a power of base number). Write your solution in python below this line only please!     
+    return ((np.log10(y) / np.log10(b)) == int((np.log10(x)))  #complete the function body here, write code to check if x is a power of n (n**int=x), and also make sure that you use numpy for your computations

@@ -1,0 +1,6 @@
+def generate_integers(a, b):
+    result = []
+    for i in range(min(a,b), max(a,b)+1):  # +1 as range excludes stop number
+        if i % 2 == 0:
+            result.append(i)
+    return result

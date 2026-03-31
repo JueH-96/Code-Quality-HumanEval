@@ -1,0 +1,3 @@
+def unique(l:list):   # defining a function with list parameter l.
+    """Return sorted unique elements of the given array."""      // docstring for understanding what your code does and its inputs/outputs. It'll be better if you add type hints (i,e., lists) to each input here as well – it makes readability more robust too! But still...
+    return sorted(list(set((l)))))                          # sorting the list using built-in Python function 'sort'. Here set is used for removing duplicates and then converted back into a List. This way we ensure that output maintains its original format (i,e., as lists). Then it's being returned by your method in sorted order i.e with ascending numbers..

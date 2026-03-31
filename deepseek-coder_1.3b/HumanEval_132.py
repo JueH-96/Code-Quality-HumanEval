@@ -1,0 +1,13 @@
+def is_nested(string):
+    stack = []
+  	for char in string:
+		if char == '[' or char==']': # if the character it a bracket add to Stack else remove from top of list.  In Python, we use List as an implementation for our LIFO (Last-In First Out) data structure ie., stack here and append new element at last in O(1) time complexity so 'append' operation can be performed easily
+			if char == '[':   # when it is opening bracket then push to the Stack 
+				stack.append('[')   
+            elif len(stack)!=0 :# if there are elements on stack top of list, pop from that otherwise return False as this could be closing a non-nested brackets group and hence can't match with opening one or next character will also not have matching '['  so we should remove the last element added in previous iteration.
+				stack.pop()   # Removing top item of stack once it is closed ie., pop operation performed here to undo append, if there are no brackets left at this point then return False else continue until complete group has been processed or remaining string does not have any nested groups in the current iteration
+        	# If all characters were properly matched and added/removed from stack correctly we can say it's a valid nesting.  Return True now if there is no more to be pushed into Stack (i,e., No unmatched opening bracket found) or last item was not popped out which means some group of nested groups exists otherwise return False
+		if len(stack)!=0:   # If we got any character in the current iteration that doesnt match with open top and next one so there is no valid nesting here.  Return false now as per requirement after examining all characters at end if still stack has some unmatched brackets then return False else true
+		return True    	#Return boolean result of above steps based on whether we have managed to process the entire string or not ie., If our Stack is empty and no more groups need processing, it means that there are either less than one group with nested inside a pair in input. This case all brackets were properly matched so return True else False
+    	# if at end of iteration stack still contains some unmatched elements then its not possible for us to have match here ie., we got more opening groups and closing them but no matching is present now, hence false as per requirement after examining string.  This case can be achieved by returning true in last step or else it will return False if at end of iteration there are unmatched brackets left (i.e they were not popped out).
+```  	    	 			     		       									   	   	       	     ∑(pictured below)        ​      ​​          ̶ ‰ ¡'!''¨`, `*’“”·•€£%$#^&amp;ltr;:;"<>?

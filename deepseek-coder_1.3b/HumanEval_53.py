@@ -1,0 +1,6 @@
+def add(x: int, y: int) -> int :  # Define the type hint. It will help other developers to understand what argument is expected by this function or return value from it in case any error occurs during execution of code inside a try block below that particular line. This can be useful for debugging and documentation purposes
+    """Add two numbers x & y"""   # Adding docstring (optional) if required 
+    
+# Complete the python program using lambda function here:        
+add = lambda x,y : x+y        # Pythonic way to define a simple anonymous/lambda add() by tapping on 'x' and then tapting `y`. It can be used as follows in case you have no other option for defining functions or code blocks without any function name: 
+                                    return ( lambda z : x+z if isinstance(z, int) else raise TypeError("Both inputs should always either of type 'int'") )         #Lambda expression which takes a number and adds it with first input. If the added result will be an integer then perform addition operation otherwise throw error

@@ -1,0 +1,6 @@
+def fib4(n: int) -> 2*int :  # type hinting. Returns twice the result since we need both positive and negative cases in case of n < 1, or if it's even greater than `max_limit` which is defined as ceiling value for some function (we could replace this with float depending on context).
+    """The Fib4 number sequence is a sequence similar to the 0-based fibbonacci sequnece that's defined as follows:
+    >>> from math import ceil, floor   # used when n < 1 or > max_limit. To be replaced with floats in real application for better accuracy due more precision needed at lower numbers (less than `max_limt`). 
+    fib4(0) -> 0                       # base cases where we need to return same type of value regardless if it's positive or negative, as n < 1.  
+    >>> from math import sqrt          # used for checking whether input number is prime (optional), not necessary but useful in some scenarios especially when dealing with bigger numbers and primality testing inside the function can be expensive computationally due to larger range of inputs.""" 
+    max_limit = 30                     # define this based on your actual requirement or limit. In case our n becomes too large we'll have overflow issues, so a better upper bound may still apply (e.g., ceiling(sqrt(n))).

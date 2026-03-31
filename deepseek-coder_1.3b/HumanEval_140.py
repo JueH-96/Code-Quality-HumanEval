@@ -1,0 +1,1 @@
+Here is the Python function that solves your problem. This code uses a built in replace() method for strings, which replaces all occurrences of one substring with another string and returns it as an output (or modified version). It also splits text into words using split(), then rejoins them together after replacing spaces to underscores if there are more than 2 consecutive.

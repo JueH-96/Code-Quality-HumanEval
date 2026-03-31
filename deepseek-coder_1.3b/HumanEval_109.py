@@ -1,0 +1,3 @@
+def move_one_ball(arr):  # Given function definition here!    
+    return not any((i >= len(arr)-1 or arr[i] < arr[(i+1)%len()]) for i in range(len()))  
+# In this solution, (i>=length-1 || element at index `i` is less than the next one).  This checks whether we are trying to move an item out of order. If yes: return False as no sorting would be possible with such operations and therefore it can't reach sorted array by moving balls only via right shift operation, so True should come back in that case!

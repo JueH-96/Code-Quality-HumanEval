@@ -1,0 +1,11 @@
+def get_positive(l: List[int]) -> Union[List[int],None]:   # Here we assume that 'list' is a built-in python type with list functionality. And for typing purpose, We use union of lists and None as the return types if no positive numbers are found in l
+    """Return only positive numbers in the list.""" 
+    
+    pos_lst = [i for i in l if i > 0]   # List comprehension to get a new array which contains all positives from original 'list' (L) using condition that each element should be greater than zero. In case there are no positive numbers, the list is empty and None will come out of this expression
+    return pos_lst  if len(pos_lst)!=0 else None   # If we found at least one non-negative number in 'list' (L), then it returns that List. Else there won’t be any output, instead the programmer should check for nullity or not and provide a default value as appropriate
+``` 
+Testing this function:    
+    - get_positive([-1,-20]) # Should return None because all elements are negative   (None)      . The 'if' condition at last line checks if our list is empty after we have generated the positive integers in it. In case of an input like [-1, –20], this function would not find any non-negative number and returns Null or Nothing which Python interprets as `None`
+    - get_positive([3,-5]) # Should return [3] because all elements are only negative   ([])      . In the above list of numbers there is one positive integer  i.e., '3' so this function will find and returns that number which Python interprets as `[3]`
+    - get_positive([2,4,-6]) # Should return [2,4,6], because all elements are only non-negative   ([2,4,6])  . In the above list of numbers there is positive integer i.e., '2', '4' and also '6'. So this function will find those three integers which Python interprets as `[2 , 4, 6]`
+    - get_positive([]) # Should return None because no elements are present in the list (None). In case of an empty input like [], it checks if there is at least one non-negative number and returns that. Since we have not found any positive numbers from this Empty List, Python interprets as `None`

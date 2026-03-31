@@ -1,0 +1,2 @@
+def sum_squares(lst):  # function definition.  
+    return sum([num**3 if idx % 4 == 0 else num **2 for idx, num in enumerate(lst)])     // This line uses list comprehension and enumeration to iterate over the lst with indices 'idx' alongside values from our input-list "lst".

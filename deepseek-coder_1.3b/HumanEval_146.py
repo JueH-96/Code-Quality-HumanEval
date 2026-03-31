@@ -1,0 +1,7 @@
+def specialFilter(nums):      //define function with parameter numlist of integer.       
+"""Write the program which takes an array and return count number  """           .//docstring for defining a new Python file/function               
+count = 0                   ///variable to hold counter value          (initially set as zero)        
+    ##for loop iterating over all elements in nums list        //looping through each element inside the input parameter     
+       if i > 10 and   ((i%2 == 1 or len(str(abs(i)) < 2 ) :  ///conditional statement to check for two conditions at once            (greater than ten) AND first & last digit odd.           This checks both 'num' greater then 10, as well also whether the absolute of num is an integer and less or equal with itself by checking its length        
+      return count              //returning final counter value after loop ends               .//complete function definition    """   (Note: The condition to check if number from list first & last digit odd. We need abs(i) because 'num' can be positive, negative and zero.)          ##end of comment block 
+```      You would call the code like this `specialFilter([15,-73,14,-15])` to get a result from calling it with input array [15 ,-73,  14， -15] . The program will return that there are two elements in provided list which meets all conditions.

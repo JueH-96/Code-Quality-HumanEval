@@ -1,0 +1,14 @@
+def get_odd_collatz(n):   
+     """Given positive integer n, return sorted list that contains odd numbers from the Collatz sequence up to and including 'unreachable number' or `1`"""  
+      result = [] # stores all generated values in a set for easy searching (O(N) complexity). 
+                   //and sorting them at last. Here we assume input will be always positive integer n, which is not guaranteed so it should add error handling if necessary as well   
+       def collatz_sequence_(n):   # this function does the Collatz sequence generation recursively    
+            nonlocal result 
+             while True:           // an infinite loop to keep generating until we reach 'unreachable number' or `1`. Here it keeps on going even after reaching and not able again for that particular path   
+                  print(n)   if n % 2 == 0 else yield (3*n + 1),      # Prints the current value, then yields to next term in sequence    
+                   result .add(int(str(yield))) ,          // add all generated values into a set for easy searching. Here it adds only even number   int converted back from str    if not divisible by 2 else just yielded Value Error (for odd numbers) and exit the loop      return sorted((result))    
+       print("The Collatz sequence: ", list(collatz_sequence_(n))) ,        // Prints out full generated number series in a row to keep track of it. Here, n is passed from outside as an argument  (should be always positive integer). The function will return the sorted version if all possible paths have been taken care
+       def collatz(i):         # this inner recursion wrapper takes start point i and call `collatz_sequence` to get a sequence starting at 'start'     //It keeps going until it reaches 1 (or any other numbers), then stops    while True:   if n == 29 or not isinstance(n, int) : return     
+               print("Stopping ", i ) ,         # Prints current stopping point and stop further recursion. Here the number `i` passed from outside as an argument (should be positive integer). This will Stop when it reaches 1    n = 29; yield   if not isinstance(n, int) : return     
+               print("Stopping ", i ) ,         # Prints current stopping point and stop further recursion. Here the number `i` passed from outside as an argument (should be positive integer). This will Stop when it reaches 1    n = 29; yield   if not isinstance(n, int) : return     
+```     It'd probably have a more efficient solution but this implementation fulfills your requirement. In Python you can use `yield` which makes the function behave like generator (like iterator). And also using set data structure to find duplicates quickly and then sorting it once done gives us an optimal result time complexity is O(N log N) in worst case scenario as we insert into a sorted list.

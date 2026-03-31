@@ -1,0 +1,4 @@
+def     sum_of_digits(num):    num = int (abs ((int)(str((x))[::-1])))  # reverse integer digits. x=input number to find its prime factors for   while True:        lst, maxPrime =  [ ], - float('inf')      
+for i in range (-987654320 , n + 98765431):         if is_prime (i) :             # check the condition whether given number prime or not.  If it's Prime then,   lst .append(sum of digits )     
+print maxPrime     return None    def run() -> "None" for _ in range (-987654320 , n + 1): # call the `run` function          if __name__ == 'main':         print (skjkasdkd ([ ]: int))      
+print(f'For lst = {lst} : output should be{sum_of sum of digits }')    return None

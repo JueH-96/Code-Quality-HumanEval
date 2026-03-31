@@ -1,0 +1,1 @@
+Sure. Here is the solution using Python's built in function `all()` which returns true if all elements of an iterable are TRUE (or else false). We use this to check whether list 'l' is increasing or decreasing from left and right side with respecting each other, thus returning a boolean value based on that condition.

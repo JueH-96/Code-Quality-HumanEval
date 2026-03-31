@@ -1,0 +1,3 @@
+Here is the completed Python function which solves your problem according to given docstring and requirements of task :
+
+Please note that we use numpy library for maximum efficiency (it computes in C not python). We also calculate min & max values using 'np.min' & ' np.max'. 0 then, is subtracted from both the minimum value(m) which will have a range only between -1 and +1 whereas Maximum Value we add it to result ranging into (+2), because after rescaling maximum element become very close on scale of max-min ie at most one.

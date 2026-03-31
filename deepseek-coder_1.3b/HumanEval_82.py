@@ -1,0 +1,1 @@
+Here is the Python function to solve this problem. We need a helper method (isPrime) that checks if number n(string length in your case ) passed as an argument, returns whether it's Prime or not and main() which takes string parameter itself .  Main uses 'prime_length', so we will use prime check on the returned value from our function.

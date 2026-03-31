@@ -1,0 +1,1 @@
+Here you go! Here we are checking if a list (q in this case), which represents an object that will fly according to our condition mentioned above whether its sum of elements or "weight" is less than the maximum possible weight w, and also it must be balanced(a palindrome).  If both conditions meet then return True else False.

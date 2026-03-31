@@ -1,0 +1,6 @@
+def sorted_list_sum(lst):  # Function Definition. Here the input is list-like data type containing strings only (Python's built in iterable).  
+    """Write a function that accepts an integer or string as parameter, deletes integers from it and returns them with sorting order."""    
+         
+         l1 = [i for i in filter(lambda x: len(x)%2==0 ,lst)] # filtering out words having odd length. The "filter" function goes through the list checking if a condition is true (in our case, string's character count should be an even number).
+          l1= sorted((i for i in set(l1)), key =lambda x: (len(x), str))  # sorting by length and then alphabetically when lengths are equal. Here we first convert list to a 'set', because sets can only contain unique elements, preventing duplicates from appearing twice if they have the same character count after removing odd ones
+          return l1   # Returned sorted final result as Python's built in iterable “list” type (since it is compatible with all sorting algorithms and has its own methods to perform operations like insertion/deletions, comparison etc.). This line will also work if you want a list or any other kind of 'iterator'.

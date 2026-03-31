@@ -1,0 +1,3 @@
+def sort_array(arr):   # input array of non-negative integers.
+    """Sort an given list in ascending order based on whether its sum is odd or even"""    
+       arr[:] = sorted([v for a, v in enumerate(sorted(list((n[0], n[-1]) + tuple())) if (a + 2 == len(arr) and not ((len(str(abs(sum)) % 3))) else abs(int(i != 0 or arr.index(tuple([v])) - i > 4)), [x for x in sorted(([n]*5)[:], key = lambda y : ((-1 if sum(*y)%2==0 and not isinstance(''.join(['{:.3f}').format(abs(float(str.lower().replace('.','').split()[-4]))-int(.strip(".{}").format((sum([x for x in str(v)[::-1] if v>=97])[:2][0]-5))), 8, '') else -6)))

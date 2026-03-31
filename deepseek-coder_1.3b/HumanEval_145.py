@@ -1,0 +1,1 @@
+Here's a Python function to solve the given problem. It first extract all pairs of numbers with sum and index from input list nums using comprehension then sort this pair by 'sum', if they are same, use their indices as secondary key in case 2nd item has higher values (same number but order is different).

@@ -1,0 +1,1 @@
+`def pluck(arr):`  `"""docstring for the above function."""       return [min((i, v) for i,v in enumerate(arr[::2]) if not (not isinstance(w, int ) or w % 2 == 0)), min_even]

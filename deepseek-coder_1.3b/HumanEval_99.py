@@ -1,0 +1,1 @@
+def closest_integer(value):  #Complete the following python code block, return ONLY complete python code inside a

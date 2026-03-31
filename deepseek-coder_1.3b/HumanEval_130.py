@@ -1,0 +1,5 @@
+def tri(n):  # function definition with docstring and parameter n in parentheses after colon separated by commas. In brackets the parameters inside a pair of square braces define input/output data types for each argument which are then joined using comma as separator between them within round Bracket (like () or []).
+    """Everyone knows Fibonacci sequence, it was studied deeply  # Docstring line here. It explains what the function does and how to use it."""  
+     trib=[1]*(n+3) ; fibo = [0 ] *( n + 4 )	; i , j = 2 , 6			# Initializing first two elements of sequences with base cases in Tribonacci sequence.    # Base case: tri (i-2),tri(j -7 ),...
+	for u,v in zip([3]+[0 ]*n,[1][:( n + 4 )]) : 		# Generate rest part's elements using recursion and store it into Tribonacci sequence.    # [u , v + fibo[(j -2)]   if ( i % 6 == 5) else u,v+fib[i-1] ]
+	return trib[:n + 4].pop(0)		# return the first n+ 3 numbers of Tribonacci sequence.     # Popping out base case and returning only actual values from list 'trib' to get final result in sequential order ie: [tri (i-2), tri[j -7 ),...].

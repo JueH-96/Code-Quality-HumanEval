@@ -1,0 +1,2 @@
+def is_bored(S):
+    return sum([1 for word in S.replace('!','.').split('.') if len(word) > 0 and word[0] == 'I']) - 2 # Subtract by two to exclude sentences starting with "i" (like: I am bored...) or ending without a period

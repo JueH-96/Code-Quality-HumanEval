@@ -1,0 +1,2 @@
+def decimal_to_binary(decimal):  # Python function definition. It takes an integer as input parameter 'Decimal'.  
+    return "db" + bin((abs(decimal)) if isinstance(decimal, int) else [bin(i)[2:] for i in map(ord, str(abs(decimal)))][::-1]+'db' # Python slicing operation. It converts the decimal to binary by iteratively using 'map', then reverse and join back with '-'.

@@ -1,0 +1,2 @@
+def sort_even(li):      """This functions takes a List li and returns as result it contains all elements of both lists in same order but even numbers are arranged.""    >>>sort_list([1, 2])    [3]
+                  ...  5]]))

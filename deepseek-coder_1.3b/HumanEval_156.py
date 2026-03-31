@@ -1,0 +1,8 @@
+def int_to_mini_roman(number):   
+     # Define the mapping of numerals to their values.   It's done this way, because it prevents errors on incorrect input (like passing a non-integer), and also ensures that 4x is only possible if x<5 - which matches with restrictions in question description above       
+         numeral_dict = {1000:'m',900: 'cm', 500 :'d',  400:'cd',   100:'c',    90:'xc',     50:'l',      40:'xl',         10:'x',       
+                         9,'ix','v','iv','i'} # Define the dictionary of numerals and their string equivalents.  It's done this way, because it prevents errors on incorrect input (like passing a non-integer),   also ensures that roman numeral strings have enough characters for given numbers to be correctly formed
+         if isinstance(number , int) : # Check the type of number - must be integer otherwise raise an exception 
+            return ''.join([numeral_dict[numeral] * (number // numeral) for numeral in sorted(numeral_dict.keys(), reverse=True)] )# Join all string representations with '' to get final result as single roman numerals   # The join operation is used instead of a loop because it's faster and consumes less memory
+        else: 
+            raise TypeError('Expected an integer, got %r.'%(type(number)))    # If the input number type isn’t correct then this message will be printed.      It checks whether given argument is int or not if incorrect exception occurs it raises a typed error     which helps in debugging and ensures that only integers are passed to function as per problem requirements

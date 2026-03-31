@@ -1,0 +1,2 @@
+def solution(lst):    
+    return sum({el[1] if el else 0 for ix, el in enumerate(filter(lambda x: lst.index(x) % 2 == 0 and not isinstance(x,(int)), lst))})   # list comprehension to get odd elements at even indices

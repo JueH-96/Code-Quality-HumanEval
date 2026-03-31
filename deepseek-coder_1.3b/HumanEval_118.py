@@ -1,0 +1,16 @@
+import string 
+from random import randint ,choice   # Importing the required modules and functions from them    
+vowels = 'AEIOUaeiou'        # All English VOWELs in both case (both uppercase/lowercase)   
+alphabet_list= list(string.ascii_letters)[:-2]   # List of all alphabets except last two for later use to get next and previous consonant 
+nextc,prev = None ,None     # initializing the vowels that will be returned at first as none is chosen yet   
+def findvowel(word):          # Function definition   creating a recursive function. We call it with word passed in parameter     
+global prev                   # Declare global variable to use later while returning value  .     Now this reference can access outside the scope of any functions or methods (it's used here only as per requirement)   
+prev = None                  # Set default previous vowel at first. It is set none initially because we are looking for closest pair from right side, not considering edge cases  
+for i in range(len(word)-1 , -1 ):     # Iterating over the word (string). This will run on reverse order as per requirement   
+ if((i>0 and ((not any([char2==chr(randint(65,91) or char2 == chr(randint(97,123)) for string in vowels]))and not word[i-1].isalpha())or (word[-1] != 'A' and i < len(len(word)-4))) : # if first character of the next pair is non alphabetical or last but one char from start then continue loop
+  for string in vowels:     # Going through all English VOWELS.    Check whether we have met any upper case/lower lowercase at this index (`char2==chr(randint()) `), if yes skip and see next character as random to get one of the closest pairs, else continue loop for word 
+   char1 = string[0]        # Get first vowel in English VOWELs    . Loop until we find a not alphabetical or last but is lowercase/upper case at start (`char2==chr(randint()) `), then it will be randomly selected from leftmost pair and returned 
+   if char1 == word[i]:     # If our random vowel matches the current one, we break loop now. This would mean that character is actually a possible closest match for uppercase or lower case at start of string as per requirement    . Loop continues until next not alphabetical/lower in first pair and then continue check from leftmost 
+      prev = char1           # Update the previous vowel to be one we just found   Now this reference can access outside any functions where `prev` is used, because it's defined globally    . It will update our current chosen character. Then break loop as once find a match at start of string then stop further search 
+      if i == 0 :     # If first iteration check for both cases and return from here   Now this reference can access outside any functions where `prev` is used, because it's defined globally    . Return the result immediately. Then break loop as once find a match at start of string then stop further search 
+      else:          if not prev :     # If first character after matching found and its next char also matches with our random vowel from previous pair than we return this one, continue to check others pairs    . Loop continues until last but the end case when no more match is present in string or it ends at start (`char2==chr(randint()) `)

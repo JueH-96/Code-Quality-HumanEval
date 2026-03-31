@@ -1,0 +1,22 @@
+def triples_sum_to_zero(l: list):
+    """
+    triples_sum_to_zero takes a list of integers as an input.
+    it returns True if there are three distinct elements in the list that
+    sum to zero, and False otherwise.
+    """
+    n = len(l)
+    if n < 3:
+        return False
+    l_sorted = sorted(l)
+    for i in range(n - 2):
+        # Two-pointer approach for the subarray after index i
+        left, right = i + 1, n - 1
+        while left < right:
+            total = l_sorted[i] + l_sorted[left] + l_sorted[right]
+            if total == 0:
+                return True
+            elif total < 0:
+                left += 1
+            else:
+                right -= 1
+    return False

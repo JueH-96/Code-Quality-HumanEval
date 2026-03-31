@@ -1,0 +1,1 @@
+Here is the complete Python function that can solve your problem. I've added a for loop inside list comprehension to intersperse each delimeter between every two consecutive elements in numbers lists and return it as an output of this specific python method named `intersperse`, which takes 2 parameters - 'numbers'(list type integer) & 'delimiter', (int).

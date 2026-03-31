@@ -1,0 +1,1 @@
+Here is a Python solution for the problem. This function first converts num into its string representation and then goes through every digit in it (using loop). For each character we check if that's an even or odd number by using modulus operator on 2, which will be zero when the last bit of binary form represents '0', so this is a right-most significant bit.

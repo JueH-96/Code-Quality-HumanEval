@@ -1,0 +1,1 @@
+"""    Given two positive integers a和b, it将返回介于a和b之间的偶数，并按升序排列。如果没有这样的数字存在则应为None或一个空的整数集合进行输出 例如：generate_integers(2,8) => [2]    """

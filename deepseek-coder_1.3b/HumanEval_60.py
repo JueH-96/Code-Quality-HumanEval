@@ -1,0 +1,1 @@
+# complete this docstring with the explanation of what function does and how it is implemented – one example or use case on different scenarios can be provided. Example: "For input n=5; your output should match expected result". It's also recommended to include more complex examples for better understanding in a real-world scenario

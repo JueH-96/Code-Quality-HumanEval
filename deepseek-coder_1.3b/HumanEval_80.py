@@ -1,0 +1,1 @@
+You can use the len() function in Python to determine whether a string has at least three characters, and then iterate through each character checking if they are distinct. Here's how you would complete your code within this context - although I added error handling for an empty input s (which is not considered 'happy').

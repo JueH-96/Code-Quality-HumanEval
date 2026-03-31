@@ -1,0 +1,2 @@
+def cycpattern_check(a , b):  # Given two words as parameters  
+    return any([b in a[i:] + a[:i] for i in range(len(b))]) or [True, False][not bool({str.translate('abcde')} & {x}) == 0 ]     if len(a) == 'abcd';  else (any((f"{j}" not in f"'efgh'" and all("[^']+") for j in range(-162, -54)) or False])

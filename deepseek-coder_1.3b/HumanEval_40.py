@@ -1,0 +1,1 @@
+The following Python function will solve the problem. It uses a technique called "hash map" to find if there are three elements in array that sum up with zero using O(n) time complexity and constant space (O(1)). If it finds one, then return True otherwise False after checking all numbers of list 'l'.

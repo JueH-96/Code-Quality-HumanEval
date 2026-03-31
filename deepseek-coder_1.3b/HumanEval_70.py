@@ -1,0 +1,3 @@
+def strange_sort_list(lst):  # O(n^2) time complexity. But it's a best effort solution due to constraint mentioned above in problem statement ie., using min() and max(). We can improve this towards constant space if required but will be less efficient than previous approach which has linear runtime for large input sizes because of nested loops, making the overall worst-case scenario O(n^2).
+    '''  Given list of integers. Return a new sorted version in strange order as described above'''   # Add docstring here about what your function does and how it behaves under different inputs/test cases to make this section more informative for user reading the code or others trying to understand its purpose (the most important part)
+    if not lst:  return []

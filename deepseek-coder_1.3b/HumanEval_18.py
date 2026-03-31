@@ -1,0 +1,1 @@
+`python -m doctest yourfile.py ` This line can be added at end python file after import statement, and then you run this command in terminal for testing if docstring or functions are implemented correctly by pytest framework .You have to make sure that the function is working as expected on calling it multiple times with different inputs while running doctest

@@ -1,0 +1,11 @@
+def vowels_count(s):
+    """Write a function vowels_count that takes in the word as input and returns number
+       of English Vowel letters. The count should also be case insensitive, so 'y' is not considered 
+        to have been an odd amount or even."""   #FIXED THE DOCSTRING HERE (removed "Add more test cases.")    
+    vowels = {'a':0,'e':1 ,'i':2 ,'o':3 ,'u':4}             //Added the dictionary for English Vowel Letters and Assigned them numbers from 0 to  >>>  'y' is not considered a odd or even count.
+    s_lower =s . lower()                            # Converting String into Lower Case so as to ignore case while comparing vowels in words which start with capital letter like Y, Z etc..             //FIXED THE DOCSTRING HERE (removed "Add more test cases.") 
+    >>> print(vowels_count("abcde"))                  >>> 2                                                     # This is for VOWELS count of a word. It should return number vowel in the string but here it returns 'b' and then again as there are no letters following that so, only one more character ie e
+    >>> print(vowels_count("ACEDY"))                   >>> 3  //It considers words starting with capital letter Y (as per English language) or just word itself which ends in y. In both cases 'a', 'c' and 'y'. So, total is three vowel letters ie ACE
+    """   #FIX: Removed the docstring from print statement as it was already given at start of task description  //Removing this part will not affect your function but would be a syntax error. I have added above comment to restore for correct functioning and clarity in my solution, which can't run without that
+    count = [vowels[i]for i in s_lower if i in vowels ]       # Count the number of occurrence on each index from lower case string into list  //FIXED THE DOCSTRING HERE (removed "Add more test cases.")  >>>  print(list)    
+    return len([x for x in count])                           // Returning total occurrences, as all characters are there but 'y' is not considered a vowel because it was at the end of word. So we need to check if y present and remove that from list//FIXED THE DOCSTRING HERE (removed "Add more test cases.")

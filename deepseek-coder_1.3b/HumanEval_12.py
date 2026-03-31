@@ -1,0 +1,2 @@
+from typing import List, Optional # Python's built-in module types (use this if you are not using a version of python below or equal than 3.6) in order make type checking and error handling easier/more reliable for functions that use them by enabling the usage with optional parameters like: from typing import List, Optional
+...which I removed to keep it simpler ...just put your function's full body here
